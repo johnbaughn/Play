@@ -14,7 +14,7 @@ if (Test-Path -Path 'C:\Program Files\Python37'){
     Write-Host "Python already installed."
 } else {
     Write-Host "Installing Python ..."
-Start-Process -FilePath "c:\Temp\python-$py_ver.exe" -ArgumentList "/quiet InstallAllUsers=0 PrependPath=1 Include_test=0"
+Start-Process -FilePath "c:\Temp\python-$py_ver.exe" -ArgumentList "/quiet InstallAllUsers=0 PrependPath=1 Include_test=0 Include_pip=1"
 }
 
 Write-Host "Verifying Python is in Env Var"
