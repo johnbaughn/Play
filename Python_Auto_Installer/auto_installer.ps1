@@ -24,4 +24,4 @@ if ( Get-ChildItem Env:\Path | Where-Object{$_.value -like "*python*"} | Test-Pa
     Write-Host "Add Python to your envriomental variables then rerun script"
 }
 Write-Host "Running Script ..."
-python.exe .\py.py
+python.exe .\py.py7
